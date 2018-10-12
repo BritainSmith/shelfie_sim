@@ -32,7 +32,7 @@ class Form extends Component {
 
   render() {
     return (
-      <div>
+      <div className="Form">
         <input
           placeholder="Enter Url"
           onChange={e => this.handleInputChange(e.target.value)}

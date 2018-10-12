@@ -1,16 +1,11 @@
 import React, { Component } from "react";
 
 class DashBoard extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      inventoryList: []
-    };
-  }
-
   render() {
-    return <div>DashBoard</div>;
+    this.props.inventoryList.map((element, index) => {
+      return <Product key={index} product={element} />;
+    });
+    return <div className="DashBoard">DashBoard</div>;
   }
 }
 

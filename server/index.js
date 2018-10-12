@@ -15,7 +15,12 @@ massive(process.env.CONNECTION_STRING)
 
 //endpoints
 app.get("/api/inventory", controller.getInventory);
+//post not functional
+app.post("/api/product", controller.addProduct);
 
+app.put("/api/product", controller.update);
+
+app.delete("/api/product/:id", controller.deleteProduct);
 const port = 4002;
 
 app.listen(port, () => {
