@@ -1,10 +1,11 @@
 {
+  "proxy": "http://localhost:4000",
   "main": "server/index.js",
-  "proxy": "http://localhost:3002",
   "name": "sim_1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "massive": "^5.5.0",
